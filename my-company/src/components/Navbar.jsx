@@ -11,6 +11,7 @@ function Navbar() {
         listStyle: 'none', 
         display: 'flex', 
         gap: '20px',
+        justifyContent: 'center',
         margin: 0,
         padding: 0
       }}>
