@@ -7,12 +7,7 @@ function App() {
 
   return (
     <UserContext.Provider value={userData}>
-      <div style={{ padding: '20px', backgroundColor: '#f0f8ff', minHeight: '100vh' }}>
-        <h1 style={{ textAlign: 'center', color: '#333' }}>
-          React Context API Demo
-        </h1>
-        <ProfilePage />
-      </div>
+      <ProfilePage />
     </UserContext.Provider>
   );
 }
