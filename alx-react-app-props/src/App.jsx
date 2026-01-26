@@ -1,4 +1,5 @@
 import ProfilePage from './components/ProfilePage';
+import UserProfile from './components/UserProfile';
 import UserContext from './UserContext';
 import './App.css'
 
@@ -7,7 +8,10 @@ function App() {
 
   return (
     <UserContext.Provider value={userData}>
-      <ProfilePage />
+      <div>
+        <ProfilePage />
+        <UserProfile />
+      </div>
     </UserContext.Provider>
   );
 }
