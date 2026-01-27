@@ -1,4 +1,4 @@
-import useRecipeStore from '../store/recipeStore';
+import useRecipeStore from './recipeStore';  // ← CHANGED!
 
 const SearchBar = () => {
   const setSearchTerm = useRecipeStore((state) => state.setSearchTerm);

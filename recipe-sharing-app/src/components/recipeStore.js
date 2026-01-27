@@ -7,7 +7,6 @@ const useRecipeStore = create((set) => ({
   filteredRecipes: [],
   recommendations: [],
 
-  // Task 0: Basic recipe management
   addRecipe: (newRecipe) =>
     set((state) => ({
       recipes: [...state.recipes, newRecipe],
@@ -15,7 +14,6 @@ const useRecipeStore = create((set) => ({
 
   setRecipes: (recipes) => set({ recipes }),
 
-  // Task 1: Update and delete recipes
   updateRecipe: (updatedRecipe) =>
     set((state) => ({
       recipes: state.recipes.map((recipe) =>
@@ -29,7 +27,6 @@ const useRecipeStore = create((set) => ({
       favorites: state.favorites.filter((id) => id !== recipeId),
     })),
 
-  // Task 2: Search and filter functionality
   setSearchTerm: (term) => set({ searchTerm: term }),
 
   filterRecipes: () =>
@@ -39,7 +36,6 @@ const useRecipeStore = create((set) => ({
       ),
     })),
 
-  // Task 3: Favorites management
   addFavorite: (recipeId) =>
     set((state) => ({
       favorites: [...state.favorites, recipeId],
@@ -50,7 +46,6 @@ const useRecipeStore = create((set) => ({
       favorites: state.favorites.filter((id) => id !== recipeId),
     })),
 
-  // Task 3: Generate recommendations
   generateRecommendations: () =>
     set((state) => {
       const recommended = state.recipes.filter(
