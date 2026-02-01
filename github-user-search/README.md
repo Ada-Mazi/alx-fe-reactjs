@@ -1,16 +1,48 @@
-# React + Vite
+# GitHub User Search Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application for searching GitHub users with basic and advanced search capabilities.
 
-Currently, two official plugins are available:
+## Live Demo
+🚀 [View Live Application](https://alx-fe-reactjs-five-blue.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Basic Search:** Search GitHub users by username
+- **Advanced Search:** Filter users by:
+  - Username
+  - Location
+  - Minimum number of repositories
+- Responsive design with Tailwind CSS
+- Real-time data from GitHub REST API
 
-## React Compiler
+## Technologies Used
+- React 18
+- Vite
+- Axios
+- Tailwind CSS
+- GitHub REST API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Local Development
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Deployment
+Deployed on Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+```
+github-user-search/
+├── src/
+│   ├── components/
+│   │   └── Search.jsx
+│   ├── services/
+│   │   └── githubService.js
+│   ├── App.jsx
+│   └── index.css
+├── public/
+└── package.json
+```
+
+## Author
+Created as part of ALX Frontend React course
